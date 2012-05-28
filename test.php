@@ -39,23 +39,23 @@ $aname = "dsafgsfh.ini";
 
 $connect = ftp_connect($host);
 if (!$connect){
-	echo "<p>Не смог подключиться</p>";
+	echo "<p>РќРµ СЃРјРѕРі РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ</p>";
 	exit();
 }else{
-	echo "<p>Смог подключиться</p>";
+	echo "<p>РЎРјРѕРі РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ</p>";
 }
 $result = ftp_login($connect, $login, $pass);
 if (!$result) {
-	echo "<p>Не смог залогиниться</p>";
+	echo "<p>РќРµ СЃРјРѕРі Р·Р°Р»РѕРіРёРЅРёС‚СЊСЃСЏ</p>";
 }else{
-	echo "<p>Смог залогиниться</p>";
+	echo "<p>РЎРјРѕРі Р·Р°Р»РѕРіРёРЅРёС‚СЊСЃСЏ</p>";
 }
 
 if (ftp_chdir($connect, $path)) {
 	if (ftp_put($connect, $aname, $tmp, FTP_BINARY)) 
-	{echo "<p>Файл загружен!</p>";}
+	{echo "<p>Р¤Р°Р№Р» Р·Р°РіСЂСѓР¶РµРЅ!</p>";}
 }else{
-	echo "<p>Не загрузить файл</p>";
+	echo "<p>РќРµ Р·Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»</p>";
 }*/
 
 //upload_file("tmp", "wooowowow.ini");

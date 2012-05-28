@@ -11,8 +11,8 @@
 	
 	/*if ($_POST['enter']) { 
 		
-		Все данные, введенные в форму отправляются через сессию, затем
-		отправляются на doLogin.php
+		Р’СЃРµ РґР°РЅРЅС‹Рµ, РІРІРµРґРµРЅРЅС‹Рµ РІ С„РѕСЂРјСѓ РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ С‡РµСЂРµР· СЃРµСЃСЃРёСЋ, Р·Р°С‚РµРј
+		РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ РЅР° doLogin.php
 		
 		$_SESSION['user_login'] = $_POST['user_login'];
 		$_SESSION['user_pass'] = $_POST['user_pass'];
@@ -32,7 +32,7 @@
 	
 	
 	$at = microtime(true);
-	echo number_format(($at - $bt), 4, ".", "")." секунд";
+	echo number_format(($at - $bt), 4, ".", "")." СЃРµРєСѓРЅРґ";
 	//echo get_some_user_data("Key", "ROMAN_MIR");
 	
 	
