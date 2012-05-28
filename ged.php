@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 	$login = $_GET['login'];
 	$type = $_GET['type'];
