@@ -3,11 +3,11 @@
 /*Тип соединения | ftp или sftp*/
 	$config['connection_type'] = 'sftp';
 /*Адрес FTP-сервера. Без порта*/
-	$config['ftp_server'] = 'vds1.rushworld.ru';
+	$config['ftp_server'] = '---';
 /*Логин от FTP*/
-	$config['ftp_login'] = 'user10';
+	$config['ftp_login'] = '---';
 /*Пароль от FTP*/
-	$config['ftp_pass'] = 'Oleg1Zam';
+	$config['ftp_pass'] = '---';
 /*Порт FTP. Стандартный - 21*/
 	$config['ftp_port'] = 21; //порт FTP
 /*Порт SFTP. Порт от SSH. Стандартный - 22*/
@@ -43,15 +43,15 @@ $config['tables']['jobs'] = 'ucp_jobs';
 
 /*БД*/
 /*Адрес MySQL-сервера. Если БД на вашем сервере, то localhost*/
-	$config['db_server'] = 'p97171.mysql.ihc.ru';
+	$config['db_server'] = '---';
 /*Порт сервера MySQL. Стандартный - 3306*/
 	$config['db_port'] = '3306';
 /*Имя базы данных, в которой будут храниться данные пользователей*/
-	$config['db_name'] = 'p97171_ucp';
+	$config['db_name'] = '---';
 /*Пользователь MySQL*/
-	$config['db_user'] = 'p97171_ucp';
+	$config['db_user'] = '---';
 /*Пароль MySQL*/
-	$config['db_pass'] = 'KDe7ks';
+	$config['db_pass'] = '---';
 	
 	
 	
