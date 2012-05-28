@@ -14,11 +14,11 @@
 		
 
 		$tr = array(
-			"0"=>"РќСѓР»СЏР±СЂСЏ", "1"=>"РЇРЅРІР°СЂСЏ", "2"=>"Р¤РµРІСЂР°Р»СЏ",
-			"3"=>"РњР°СЂС‚Р°", "4"=>"РђРїСЂРµР»СЏ", "5"=>"РњР°СЏ",
-			"6"=>"РСЋРЅСЏ", "7"=>"РСЋР»СЏ", "8"=>"РђРІРіСѓСЃС‚Р°",
-			"9"=>"РЎРµРЅС‚СЏР±СЂСЏ", "10"=>"РћРєС‚СЏР±СЂСЏ", "11"=>"РќРѕСЏР±СЂСЏ",
-			"12"=>"Р”РµРєР°Р±СЂСЏ");
+			"0"=>"Нулября", "1"=>"Января", "2"=>"Февраля",
+			"3"=>"Марта", "4"=>"Апреля", "5"=>"Мая",
+			"6"=>"Июня", "7"=>"Июля", "8"=>"Августа",
+			"9"=>"Сентября", "10"=>"Октября", "11"=>"Ноября",
+			"12"=>"Декабря");
 		return strtr($int,$tr);
 	
 
@@ -42,25 +42,25 @@
 		
 	/*
 	if ((comp_date() - $_SESSION['update_time']) > $config['interval']) {
-		//РїРѕР»РЅРѕСЃС‚СЊСЋ РѕР±РЅРѕРІР»СЏРµРј РґР°РЅРЅС‹Рµ
+		//полностью обновляем данные
 		
 		if ($_SESSION['user_data'] = get_all_user_data($login)) {
 			
 			if ($_SESSION['user_data'][$type] == false || $_SESSION['user_data'][$type] == "" || $_SESSION['user_data'][$type] == " " || $_SESSION['user_data'][$type] == "0" || $_SESSION['user_data'][$type] == 0) {
 				if ($_SESSION['user_data']['out_data'] != 1) {
-//==  РЎРїРµС†РёР°Р»СЊРЅС‹Рµ РѕС€РёР±РєРё "РЅРµС‚ РґР°РЅРЅС‹С…" РґР»СЏ РѕС‚РґРµР»СЊРЅС‹С… С‚РёРїРѕРІ  ==
+//==  Специальные ошибки "нет данных" для отдельных типов  ==
 					if ($type == "PhoneNr") {
-						echo "РЅРµС‚ С‚РµР»РµС„РѕРЅР°";
+						echo "нет телефона";
 					}else{
-						echo "РЅРµС‚ РґР°РЅРЅС‹С…";
+						echo "нет данных";
 					}
 				}
 			}else{
-				$frk = find_rank_str($_SESSION['user_data']['Rank'], $_SESSION['user_data']['Member'], $_SESSION['user_data']['Leader']);	//str'РёРЅРіРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РЅРіР°. Р—Р°РјРµРЅР° С‡РёСЃРµР» РЅР° str
+				$frk = find_rank_str($_SESSION['user_data']['Rank'], $_SESSION['user_data']['Member'], $_SESSION['user_data']['Leader']);	//str'инговое значение ранга. Замена чисел на str
 				$_SESSION['user_data']['Rank'] = $frk;
 				
-				if ($_SESSION['user_data']['PhoneNr'] == 0 || $_SESSION['user_data']['PhoneNr'] == "" || $_SESSION['user_data']['PhoneNr'] == " ") { //Р•СЃР»Рё Сѓ РёРіСЂРѕРєР° РЅРµС‚ С‚РµР»РµС„РѕРЅР°, С‚Р°Рє Рё РіРѕРІРѕСЂРёРј
-						//Limp Bizkit вЂ“ Take A Look Around    РљСЂСѓС‚РѕР№ С‚СЂРµРє
+				if ($_SESSION['user_data']['PhoneNr'] == 0 || $_SESSION['user_data']['PhoneNr'] == "" || $_SESSION['user_data']['PhoneNr'] == " ") { //Если у игрока нет телефона, так и говорим
+						//Limp Bizkit – Take A Look Around    Крутой трек
 					
 				}
 				
@@ -68,27 +68,27 @@
 			}
 		}else{
 				if ($_SESSION['user_data']['out_data'] > 1) {
-					echo "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ";
+					echo "Пользователь не зарегистрирован";
 				}else{
 				}
 				$_SESSION['user_data']['out_data'] = 1;
 		}
 	}elseif((comp_date() - $_SESSION['update_time']) < $config['interval']){
-		//Р±РµСЂРµРј РёР· СЃРµСЃСЃРёРё
+		//берем из сессии
 		
 		if ($_SESSION['user_data'][$type] == false || $_SESSION['user_data'][$type] == "") {
-			echo "РќРµС‚ РґР°РЅРЅС‹С…";
+			echo "Нет данных";
 		}else{
 			echo $_SESSION['user_data'][$type];
 		}
 		
 	}else{
 		
-		//РїРѕР»РЅРѕСЃС‚СЊСЋ РѕР±РЅРѕРІР»СЏРµРј РґР°РЅРЅС‹Рµ
+		//полностью обновляем данные
 		$udata = get_all_user_data($login);
 		
 		if ($udata[$type] == false || $udata[$type] == "") {
-			echo "РќРµС‚ РґР°РЅРЅС‹С…";
+			echo "Нет данных";
 		}else{
 			echo $udata[$type];	
 		}
@@ -96,22 +96,22 @@
 	}
 	*/
 
-	if ($_SESSION['user_data'] = get_all_user_data($login)) { //Р•СЃР»Рё РІР·СЏС‚СЊ РґР°РЅРЅС‹Рµ СЂРµР°Р»СЊРЅРѕ
+	if ($_SESSION['user_data'] = get_all_user_data($login)) { //Если взять данные реально
 
 			
-			$_SESSION['user_data']['Rank'] = find_rank_str($_SESSION['user_data']['Rank'], $_SESSION['user_data']['Member'], $_SESSION['user_data']['Leader']);	//str'РёРЅРіРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РЅРіР°. Р—Р°РјРµРЅР° С‡РёСЃРµР» РЅР° str
+			$_SESSION['user_data']['Rank'] = find_rank_str($_SESSION['user_data']['Rank'], $_SESSION['user_data']['Member'], $_SESSION['user_data']['Leader']);	//str'инговое значение ранга. Замена чисел на str
 			$_SESSION['user_data']['Job'] = get_job($_SESSION['user_data']['Job']);	
-					if ($_SESSION['user_data']['Job'] == "0" || $_SESSION['user_data']['Job'] == false) {$_SESSION['user_data']['Job'] = "Р‘РµР·СЂР°Р±РѕС‚РЅС‹Р№"; $_SESSION['user_data']['echo_not_data'] = 1;}
+					if ($_SESSION['user_data']['Job'] == "0" || $_SESSION['user_data']['Job'] == false) {$_SESSION['user_data']['Job'] = "Безработный"; $_SESSION['user_data']['echo_not_data'] = 1;}
 			$_SESSION['user_data']['Fraction'] = get_fraction($_SESSION['user_data']['Member'], $_SESSION['user_data']['Leader']);
 			$_SESSION['user_data']['RegDate'] = $_SESSION['user_data']['RegDay']." ".num_to_month($_SESSION['user_data']['RegMoon'])." ".$_SESSION['user_data']['RegYear'];
 			$_SESSION['user_data']['Char'] = "<img src=\"".$config['site_addr']."/img/skins/Skin_".$_SESSION['user_data']['Char'].".png"."\">";
 			$_SESSION['user_data']['Bizz'] = get_player_bizz($login);
-					if ($_SESSION['user_data']['Bizz'] == false) {$_SESSION['user_data']['Bizz'] = "РРіСЂРѕРє РЅРµ РІР»Р°РґРµРµС‚ Р±РёР·РЅРµСЃРѕРј";}
+					if ($_SESSION['user_data']['Bizz'] == false) {$_SESSION['user_data']['Bizz'] = "Игрок не владеет бизнесом";}
 							
-//==  РЎРїРµС†РёР°Р»СЊРЅС‹Рµ РѕС€РёР±РєРё "РЅРµС‚ РґР°РЅРЅС‹С…" РґР»СЏ РѕС‚РґРµР»СЊРЅС‹С… С‚РёРїРѕРІ  ==
+//==  Специальные ошибки "нет данных" для отдельных типов  ==
 					if ($type == "PhoneNr") {
 						if ($_SESSION['user_data']['PhoneNr'] == 0 || $_SESSION['user_data']['PhoneNr'] == false || $_SESSION['user_data']['PhoneNr'] == " ") {
-							echo "РќРµС‚ С‚РµР»РµС„РѕРЅР°";
+							echo "Нет телефона";
 							$_SESSION['user_data']['PhoneNr'] = false;
 							$_SESSION['user_data']['echo_not_data'] = 1;
 						}
@@ -124,7 +124,7 @@
 				
 				if ($_SESSION['user_data'][$type] == "0" || $_SESSION['user_data'][$type] == " " || $_SESSION['user_data'][$type] == "") {
 					if ($_SESSION['user_data']['echo_not_data'] != 1) {
-						echo "РќРµС‚ РґР°РЅРЅС‹С…";
+						echo "Нет данных";
 					}
 				}
 
@@ -132,9 +132,9 @@
 		}else{
 				if ($_SESSION['user_data']['out_data'] > 1) {
 					if ($_SESSION['user_data']['Register'] != 1) {
-						echo "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ";
+						echo "Пользователь не зарегистрирован";
 					}else{
-						echo "РќРµРёР·РІРµСЃС‚РЅР°СЏ РїСЂРѕР±Р»РµРјР°";
+						echo "Неизвестная проблема";
 					}
 				}
 				$_SESSION['user_data']['out_data'] = 1;
