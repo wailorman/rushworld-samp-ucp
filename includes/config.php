@@ -1,28 +1,28 @@
 <?php
-/*Îñíîâíûå íàñòðîéêè*/
-/*Òèï ñîåäèíåíèÿ | ftp èëè sftp*/
+/*ÐžÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸*/
+/*Ð¢Ð¸Ð¿ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ | ftp Ð¸Ð»Ð¸ sftp*/
 	$config['connection_type'] = 'sftp';
-/*Àäðåñ FTP-ñåðâåðà. Áåç ïîðòà*/
+/*ÐÐ´Ñ€ÐµÑ FTP-ÑÐµÑ€Ð²ÐµÑ€Ð°. Ð‘ÐµÐ· Ð¿Ð¾Ñ€Ñ‚Ð°*/
 	$config['ftp_server'] = '---';
-/*Ëîãèí îò FTP*/
+/*Ð›Ð¾Ð³Ð¸Ð½ Ð¾Ñ‚ FTP*/
 	$config['ftp_login'] = '---';
-/*Ïàðîëü îò FTP*/
+/*ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð¾Ñ‚ FTP*/
 	$config['ftp_pass'] = '---';
-/*Ïîðò FTP. Ñòàíäàðòíûé - 21*/
-	$config['ftp_port'] = 21; //ïîðò FTP
-/*Ïîðò SFTP. Ïîðò îò SSH. Ñòàíäàðòíûé - 22*/
-	$config['sftp_port'] = 22; //ïîðò SFTP
-/*Äëÿ SFTP. Ïóòü ê ïàïêå ïîëüçîâàòåëÿ. Áåç "/" â êîíöå*/
+/*ÐŸÐ¾Ñ€Ñ‚ FTP. Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ - 21*/
+	$config['ftp_port'] = 21; //Ð¿Ð¾Ñ€Ñ‚ FTP
+/*ÐŸÐ¾Ñ€Ñ‚ SFTP. ÐŸÐ¾Ñ€Ñ‚ Ð¾Ñ‚ SSH. Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ - 22*/
+	$config['sftp_port'] = 22; //Ð¿Ð¾Ñ€Ñ‚ SFTP
+/*Ð”Ð»Ñ SFTP. ÐŸÑƒÑ‚ÑŒ Ðº Ð¿Ð°Ð¿ÐºÐµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ. Ð‘ÐµÐ· "/" Ð² ÐºÐ¾Ð½Ñ†Ðµ*/
 	$config['sftp_homedir'] = '/var/www/user10/data';
-/*Ïóòü ê INI-ôàéëàì àêêàóíòîâ.*/
+/*ÐŸÑƒÑ‚ÑŒ Ðº INI-Ñ„Ð°Ð¹Ð»Ð°Ð¼ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð¾Ð².*/
 	$config['accounts_dir'] = '/server/scriptfiles/Accounts/';
-/*Âàøå óíèêàëüíîå ÷èñëî*/
+/*Ð’Ð°ÑˆÐµ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾*/
 	$config['char'] = 7;
-/*Ñåðâåð õåøèðóåò ïàðîëü èëè íåò?*/
+/*Ð¡ÐµÑ€Ð²ÐµÑ€ Ñ…ÐµÑˆÐ¸Ñ€ÑƒÐµÑ‚ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð¸Ð»Ð¸ Ð½ÐµÑ‚?*/
 	$config['is_server_hashing'] = false;
-/*Èíòåðâàë âðåìåíè, ÷åðåç êîòîðûé áóäóò îáíîâëÿòüñÿ äàííûå ïîëüçîâàòåëÿ â ÁÄ. Â ìèíóòàõ*/
-	$config['interval'] = 5; //Òîëüêî öåëîå è ïîëîæèòåëüíîå ÷èñëî!
-/*E-Mail äëÿ îò÷åòîâ*/	
+/*Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸, Ñ‡ÐµÑ€ÐµÐ· ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÑ‚ÑŒÑÑ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð² Ð‘Ð”. Ð’ Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…*/
+	$config['interval'] = 5; //Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ñ†ÐµÐ»Ð¾Ðµ Ð¸ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾!
+/*E-Mail Ð´Ð»Ñ Ð¾Ñ‚Ñ‡ÐµÑ‚Ð¾Ð²*/	
 	$config['admin_email'] = 'admin@rushworld.ru';
 
 #/var/www/user10/data/server/scriptfiles/Accounts/
@@ -31,7 +31,7 @@
 
 
 
-/*Èìåíà òàáëèö*/
+/*Ð˜Ð¼ÐµÐ½Ð° Ñ‚Ð°Ð±Ð»Ð¸Ñ†*/
 $config['tables']['users'] = 'ucp_users';
 $config['tables']['ranks'] = 'ucp_ranks';
 $config['tables']['fractions'] = 'ucp_fractions';
@@ -41,22 +41,22 @@ $config['tables']['jobs'] = 'ucp_jobs';
 
 
 
-/*ÁÄ*/
-/*Àäðåñ MySQL-ñåðâåðà. Åñëè ÁÄ íà âàøåì ñåðâåðå, òî localhost*/
+/*Ð‘Ð”*/
+/*ÐÐ´Ñ€ÐµÑ MySQL-ÑÐµÑ€Ð²ÐµÑ€Ð°. Ð•ÑÐ»Ð¸ Ð‘Ð” Ð½Ð° Ð²Ð°ÑˆÐµÐ¼ ÑÐµÑ€Ð²ÐµÑ€Ðµ, Ñ‚Ð¾ localhost*/
 	$config['db_server'] = '---';
-/*Ïîðò ñåðâåðà MySQL. Ñòàíäàðòíûé - 3306*/
+/*ÐŸÐ¾Ñ€Ñ‚ ÑÐµÑ€Ð²ÐµÑ€Ð° MySQL. Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ - 3306*/
 	$config['db_port'] = '3306';
-/*Èìÿ áàçû äàííûõ, â êîòîðîé áóäóò õðàíèòüñÿ äàííûå ïîëüçîâàòåëåé*/
+/*Ð˜Ð¼Ñ Ð±Ð°Ð·Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ…, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð±ÑƒÐ´ÑƒÑ‚ Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒÑÑ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹*/
 	$config['db_name'] = '---';
-/*Ïîëüçîâàòåëü MySQL*/
+/*ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ MySQL*/
 	$config['db_user'] = '---';
-/*Ïàðîëü MySQL*/
+/*ÐŸÐ°Ñ€Ð¾Ð»ÑŒ MySQL*/
 	$config['db_pass'] = '---';
 	
 	
 	
 	
-/*Ïîëÿ*/
+/*ÐŸÐ¾Ð»Ñ*/
 $config['fields']['id'] = 'id';
 $config['fields']['login'] = 'login';
 $config['fields']['pass'] = 'pass';
@@ -65,28 +65,28 @@ $config['fields']['hash_pass'] = 'hash_pass';
 
 
 
-/*URL-û*/
-/*Àäðåñ ïàíåëè óïðàâëåíèÿ. Áåç "/" â êîíöå*/
+/*URL-Ñ‹*/
+/*ÐÐ´Ñ€ÐµÑ Ð¿Ð°Ð½ÐµÐ»Ð¸ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ. Ð‘ÐµÐ· "/" Ð² ÐºÐ¾Ð½Ñ†Ðµ*/
 	$config['site_addr'] = 'http://rushworld.ru/fwu';
-/*Äîìåí, íà êîòîðîé ðàñïîëîæåíà UCP*/
+/*Ð”Ð¾Ð¼ÐµÐ½, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð° UCP*/
 	$config['domain_name'] = 'rushworld.ru';
-/*Ïîëíûé ïóòü îò êîðíÿ ñåðâåðà äî ïàïêè ñ UCP. Áåç "/" â êîíöå*/
+/*ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ Ð¾Ñ‚ ÐºÐ¾Ñ€Ð½Ñ ÑÐµÑ€Ð²ÐµÑ€Ð° Ð´Ð¾ Ð¿Ð°Ð¿ÐºÐ¸ Ñ UCP. Ð‘ÐµÐ· "/" Ð² ÐºÐ¾Ð½Ñ†Ðµ*/
 	$config['full_directory'] = '/home/p97171/www/rushworld.ru/fwu';
 
 
 
-/*Ïåðåìåííûå INI-ôàéëîâ*/
+/*ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ INI-Ñ„Ð°Ð¹Ð»Ð¾Ð²*/
 	$config['ini']['Key'] = $config['ini'][0] = 'Key';
 	$config['ini']['Level'] = $config['ini'][1] = 'Level';
 	$config['ini']['AdminLevel'] = $config['ini'][2] = 'AdminLevel';
 	$config['ini']['HelperLevel'] = $config['ini'][3] = 'HelperLevel';
 	$config['ini']['DonateRank'] = $config['ini'][4] = 'DonateRank';
 	$config['ini']['UpgradePoints'] = $config['ini'][5] = 'UpgradePoints';
-	$config['ini']['ConnectedTime'] = $config['ini'][6] = 'ConnectedTime'; //Ñòàæ â ÷àñàõ
+	$config['ini']['ConnectedTime'] = $config['ini'][6] = 'ConnectedTime'; //Ð¡Ñ‚Ð°Ð¶ Ð² Ñ‡Ð°ÑÐ°Ñ…
 	$config['ini']['Registered'] = $config['ini'][7] = 'Registered';
 	$config['ini']['Sex'] = $config['ini'][8] = 'Sex';
 	$config['ini']['Age'] = $config['ini'][9] = 'Age';
-	$config['ini']['Origin'] = $config['ini'][10] = 'Origin'; //ðîäíîé ãîðîä
+	$config['ini']['Origin'] = $config['ini'][10] = 'Origin'; //Ñ€Ð¾Ð´Ð½Ð¾Ð¹ Ð³Ð¾Ñ€Ð¾Ð´
 	$config['ini']['Banned'] = $config['ini'][11] = 'Banned';
 	$config['ini']['Muted'] = $config['ini'][12] = 'Muted';
 	$config['ini']['Respect'] = $config['ini'][13] = 'Respect';
@@ -102,21 +102,21 @@ $config['fields']['hash_pass'] = 'hash_pass';
 	$config['ini']['BiggestFish'] = $config['ini'][23] = 'BiggestFish';
 	//$config['ini']['Job'] = $config['ini'][24] = 'Job';
 	$config['ini']['Job'] = $config['ini'][24] = 'Job';
-		/*$config['ini']['Job'][0] = $config['ini'][24][0] = 'Áåçðàáîòíûé';
-		$config['ini']['Job'][1] = $config['ini'][24][1] = 'Äåòåêòèâ';
-		$config['ini']['Job'][2] = $config['ini'][24][2] = 'Þðèñò';
-		$config['ini']['Job'][3] = $config['ini'][24][3] = 'Øëþõà';
-		$config['ini']['Job'][4] = $config['ini'][24][4] = 'Íàðêîòîðãîâåö';
-		$config['ini']['Job'][5] = $config['ini'][24][5] = 'Ïðîäàâåö ìàøèí';
-		$config['ini']['Job'][6] = $config['ini'][24][6] = 'Ðåïîðòåð íîâîñòåé';
-		$config['ini']['Job'][7] = $config['ini'][24][7] = 'Ìåõàíèê';
-		$config['ini']['Job'][8] = $config['ini'][24][8] = 'Òåëîõðàíèòåëü';
-		$config['ini']['Job'][9] = $config['ini'][24][9] = 'Ïðîäàâåö îðóæèÿ';
-		$config['ini']['Job'][10] = $config['ini'][24][10] = 'Ïðîäàâåö ìàøèí';
-		$config['ini']['Job'][12] = $config['ini'][24][12] = 'Áîêñåð';
-		$config['ini']['Job'][14] = $config['ini'][24][14] = 'Âîäèòåëü àâòîáóñà';
-		$config['ini']['Job'][15] = $config['ini'][24][15] = 'Ðàçíîñ÷èê ãàçåò';
-		$config['ini']['Job'][16] = $config['ini'][24][16] = 'Âîäèòåëü àâòîáóñà';*/
+		/*$config['ini']['Job'][0] = $config['ini'][24][0] = 'Ð‘ÐµÐ·Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ñ‹Ð¹';
+		$config['ini']['Job'][1] = $config['ini'][24][1] = 'Ð”ÐµÑ‚ÐµÐºÑ‚Ð¸Ð²';
+		$config['ini']['Job'][2] = $config['ini'][24][2] = 'Ð®Ñ€Ð¸ÑÑ‚';
+		$config['ini']['Job'][3] = $config['ini'][24][3] = 'Ð¨Ð»ÑŽÑ…Ð°';
+		$config['ini']['Job'][4] = $config['ini'][24][4] = 'ÐÐ°Ñ€ÐºÐ¾Ñ‚Ð¾Ñ€Ð³Ð¾Ð²ÐµÑ†';
+		$config['ini']['Job'][5] = $config['ini'][24][5] = 'ÐŸÑ€Ð¾Ð´Ð°Ð²ÐµÑ† Ð¼Ð°ÑˆÐ¸Ð½';
+		$config['ini']['Job'][6] = $config['ini'][24][6] = 'Ð ÐµÐ¿Ð¾Ñ€Ñ‚ÐµÑ€ Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹';
+		$config['ini']['Job'][7] = $config['ini'][24][7] = 'ÐœÐµÑ…Ð°Ð½Ð¸Ðº';
+		$config['ini']['Job'][8] = $config['ini'][24][8] = 'Ð¢ÐµÐ»Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÐµÐ»ÑŒ';
+		$config['ini']['Job'][9] = $config['ini'][24][9] = 'ÐŸÑ€Ð¾Ð´Ð°Ð²ÐµÑ† Ð¾Ñ€ÑƒÐ¶Ð¸Ñ';
+		$config['ini']['Job'][10] = $config['ini'][24][10] = 'ÐŸÑ€Ð¾Ð´Ð°Ð²ÐµÑ† Ð¼Ð°ÑˆÐ¸Ð½';
+		$config['ini']['Job'][12] = $config['ini'][24][12] = 'Ð‘Ð¾ÐºÑÐµÑ€';
+		$config['ini']['Job'][14] = $config['ini'][24][14] = 'Ð’Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ Ð°Ð²Ñ‚Ð¾Ð±ÑƒÑÐ°';
+		$config['ini']['Job'][15] = $config['ini'][24][15] = 'Ð Ð°Ð·Ð½Ð¾ÑÑ‡Ð¸Ðº Ð³Ð°Ð·ÐµÑ‚';
+		$config['ini']['Job'][16] = $config['ini'][24][16] = 'Ð’Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ Ð°Ð²Ñ‚Ð¾Ð±ÑƒÑÐ°';*/
 	$config['ini']['Paycheck'] = $config['ini'][25] = 'Paycheck';
 	$config['ini']['HeadValue'] = $config['ini'][26] = 'HeadValue';
 	$config['ini']['Jailed'] = $config['ini'][27] = 'Jailed';
